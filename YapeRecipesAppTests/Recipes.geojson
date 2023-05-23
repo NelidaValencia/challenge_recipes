@@ -1,0 +1,55 @@
+
+[
+    {
+        "name": "Ceviche",
+        "image": "https://blog.plazavea.com.pe/wp-content/uploads/2022/01/Ceviche-1200x675.jpg",
+        "description": "El cebiche, ceviche, sebiche o seviche · es un plato consistente en carne marinada ―pescado, mariscos o ambos― en aliños cítricos.",
+        "coordinates": {
+            "latitude": -12.0990381,
+            "longitude": -77.0225307
+        }
+    },{
+        "name": "Arroz con pato",
+        "image": "https://comidasperuanas.net/wp-content/uploads/2015/09/Arroz-con-pato.webp",
+        "description": "La receta de Arroz con Pato que presento es la que me enseño mi abuela que vive en Chiclayo (capital del departamento de Lambayeque) al norte del Perú. Además es de donde proviene este exquisito plato que antiguamente también tenía otros nombres: «pato con arroz», «pato con arroz a la chiclayana» o «arroz con pato de Lambayeque». El Arroz con Pato es un plato típico del norte del Perú y tiene un sabor delicioso gracias al culantro (cilantro) y a la Chicha de Jora. Prepararlo no es tan difícil como muchos suponen. En mi opinión el secreto está en la dedicación y en los ingredientes utilizados.",
+        "coordinates": {
+            "latitude": -12.0990381,
+            "longitude": -77.0225307
+        }
+    },{
+        "name": "Seco de cabrito",
+        "image": "https://comidasperuanas.net/wp-content/uploads/2016/02/Seco-de-cabrito-con-frejoles.webp",
+        "description": "El Seco de Cabrito es uno de los platos más representativos del norte peruano con algunas variaciones en distintas regiones, donde el ingrediente principal es la carne tierna del cabrito y se sirve con frejoles aderezados en cebolla y ajos. Es una comida típica de la región de Lambayeque (Trujillo, Chiclayo, Piura) que se consume principalmente durante las fiestas populares y familiares. ¡A comer!",
+        "coordinates": {
+            "latitude": -12.0990381,
+            "longitude": -77.0225307
+        }
+    },
+    {
+        "name": "Sopa teologa",
+        "image": "https://comidasperuanas.net/wp-content/uploads/2020/02/Sopa-Teologa.webp",
+        "description": "La Sopa Teóloga es una delicia, un plato muy apetitoso y suculento, digno representante de la cocina norteña, muy colorido por la cantidad de ingredientes y acompañada de pepián de arroz y cabrito. ¡A comer!",
+        "coordinates": {
+            "latitude": -12.0990381,
+            "longitude": -77.0225307
+        }
+    },{
+        "name": "Sancochado",
+        "image": "https://comidasperuanas.net/wp-content/uploads/2020/11/Sancochado-peruano.webp",
+        "description": "La preparación de este sancochado nos resulta ventajosa, pues requiere de ingredientes muy fáciles de conseguir en el Perú (como la papa blanca y el choclo). Esta exquisitez suele comerse como entrada o plato principal, sobre todo durante la fuerte época de invierno.",
+        "coordinates": {
+            "latitude": -12.0990381,
+            "longitude": -77.0225307
+        }
+    },
+    {
+        "name": "Tallarines",
+        "image": "https://comidasperuanas.net/wp-content/uploads/2023/02/Tallarines-Verdes-con-Bistec.jpg",
+        "description": "El tallarín es un tipo de masa alargada, de ancho pequeño y forma achatada que integran el conjunto de las paste asciutte de origen italiano.",
+        "coordinates": {
+            "latitude": -12.0936672,
+            "longitude": -77.0110168
+        }
+    }
+]
+

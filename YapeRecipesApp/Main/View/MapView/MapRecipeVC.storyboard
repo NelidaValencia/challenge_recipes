@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map RecipeVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MapRecipeVC" id="Y6W-OH-hqX" customClass="MapRecipeVC" customModule="YapeRecipesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o20-Xh-Wwa" customClass="MKMapView">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBw-KK-j0h">
+                                <rect key="frame" x="10" y="69" width="37" height="26"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G4V-5J-nPw">
+                                        <rect key="frame" x="0.0" y="3.6666666666666661" width="21" height="19.333333333333336"/>
+                                        <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="small" renderingMode="original"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdi-D8-vUC">
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="26"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="backMap"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="back:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kkO-Md-ZU3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kdi-D8-vUC" secondAttribute="trailing" id="0oV-dn-rZt"/>
+                                    <constraint firstItem="G4V-5J-nPw" firstAttribute="leading" secondItem="zBw-KK-j0h" secondAttribute="leading" id="9uz-CK-B7H"/>
+                                    <constraint firstItem="kdi-D8-vUC" firstAttribute="leading" secondItem="zBw-KK-j0h" secondAttribute="leading" id="JQ5-zh-W1I"/>
+                                    <constraint firstAttribute="trailing" secondItem="G4V-5J-nPw" secondAttribute="trailing" constant="16" id="MMA-ze-n2d"/>
+                                    <constraint firstItem="kdi-D8-vUC" firstAttribute="top" secondItem="zBw-KK-j0h" secondAttribute="top" id="Ujq-mV-GOy"/>
+                                    <constraint firstAttribute="bottom" secondItem="G4V-5J-nPw" secondAttribute="bottom" id="WHP-w1-Jhw"/>
+                                    <constraint firstAttribute="bottom" secondItem="kdi-D8-vUC" secondAttribute="bottom" id="a9i-VK-v65"/>
+                                    <constraint firstAttribute="height" constant="26" id="mL9-CI-2bQ"/>
+                                    <constraint firstAttribute="width" constant="37" id="ni6-nR-dyF"/>
+                                    <constraint firstItem="G4V-5J-nPw" firstAttribute="top" secondItem="zBw-KK-j0h" secondAttribute="top" id="uwJ-kx-S7G"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="o20-Xh-Wwa" secondAttribute="trailing" id="0CZ-VE-xgP"/>
+                            <constraint firstItem="zBw-KK-j0h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="Bcn-KO-ACh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="o20-Xh-Wwa" secondAttribute="bottom" id="ljI-sS-hPB"/>
+                            <constraint firstItem="o20-Xh-Wwa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pUh-YP-cuM"/>
+                            <constraint firstItem="zBw-KK-j0h" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="qqx-UA-MZ0"/>
+                            <constraint firstItem="o20-Xh-Wwa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="tgm-AB-EmK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="o20-Xh-Wwa" id="Png-ZE-cYc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9.9236641221374047" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
